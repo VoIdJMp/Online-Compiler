@@ -3,7 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ![Screen1](screenshots/1.PNG)
+
 ![Screen2](screenshots/2.PNG)
+
 ![Screen3](screenshots/3.PNG)
 
 ## Development server
