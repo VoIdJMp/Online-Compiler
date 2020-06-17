@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Онлайн компилятор</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <mat-form-field>
+    <mat-label>C++11</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let i of langs" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="button" class="btn btn-primary" style="margin-left: 30px;" (click)="complierCode(codeText, inputText, outputText)">Запустить</button>
+</div>
+<div class="container">
+  <mat-form-field appearance="fill" class="inptText">
+    <mat-label>Ваш код</mat-label>
+    <textarea matInput style="height: 60vh;" #codeText></textarea>
+  </mat-form-field>
+  <div class="dataInput">
+    <mat-form-field appearance="fill" style="width: 48%;">
+      <mat-label>Input</mat-label>
+      <textarea matInput style="height: 20vh;" #inputText></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="float: right; width: 48%;">
+      <mat-label>Output</mat-label>
+      <textarea matInput style="height: 20vh;" #outputText></textarea>
+    </mat-form-field>
+  </div>
+</div>
